@@ -17,5 +17,7 @@ public class HelloWorld {
         System.out.print((hello == ("Hel" + "lo")) + " ");
         System.out.print((hello == ("Hel" + lo)) + " ");
         System.out.println(hello == ("Hel" + lo).intern());
+
+        System.out.println("Hello World".indexOf("o"));
     }
 }
