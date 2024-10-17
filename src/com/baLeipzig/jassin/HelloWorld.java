@@ -10,5 +10,12 @@ public class HelloWorld {
         }
         System.out.println(1 + 2 + "Studierende");
         System.out.println("Studierende"+ 1 + 2);
+
+        String hello = "Hello", lo = "lo";
+        System.out.print((hello == "Hello") + " ");
+        System.out.print((hello == "Hello") + " ");
+        System.out.print((hello == ("Hel" + "lo")) + " ");
+        System.out.print((hello == ("Hel" + lo)) + " ");
+        System.out.println(hello == ("Hel" + lo).intern());
     }
 }
