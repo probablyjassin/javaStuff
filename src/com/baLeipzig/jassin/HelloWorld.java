@@ -19,5 +19,22 @@ public class HelloWorld {
         System.out.println(hello == ("Hel" + lo).intern());
 
         System.out.println("Hello World".indexOf("o"));
+
+        int dezimalWert = 10435;
+        // int oktalWert = 0243; // compiler complains lol
+        int hexWert = 0x28;
+        int binWert = 0b1010;
+        int dezimalWert2 = 10_435;
+
+        long dezimalWertL = 10435L;
+
+        char ichBinEinChar = 'x';
+        char ichBinEinChar2 = 120;
+        char ichBinEinChar3 = '\u0078';
+
+        String nichts = null;
+        String leer;
+
+        System.out.println(nichts);
     }
 }
