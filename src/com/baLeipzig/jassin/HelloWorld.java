@@ -35,6 +35,10 @@ public class HelloWorld {
         String nichts = null;
         String leer;
 
-        System.out.println(nichts);
+        // System.out.println(nichts);
+
+        final int TAGE_PRO_WOCHE = 7;
+        final double pi = 3.1415926535897932384626433832795028841;
+        System.out.println(pi);
     }
 }
