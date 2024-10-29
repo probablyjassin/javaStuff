@@ -14,4 +14,18 @@ public class EinfacheMathematik {
             return ggT(a, b - a);
         }
     }
+
+    public static void rekursionDemo(int tiefe) {
+        if (tiefe < 1) {
+            System.out.println("Rekursionstiefe erreicht");
+        }
+        else {
+            System.out.println("Rekursionstiefe " + tiefe);
+            rekursionDemo(tiefe - 1);
+        }
+    }
+    // call rekursionDemo(5) to see the output
+    public static void main(String[] args) {
+        rekursionDemo(9999);
+    }
 }
