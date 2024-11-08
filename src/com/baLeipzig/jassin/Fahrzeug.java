@@ -10,10 +10,15 @@ public class Fahrzeug {
     private final String marke;
     private final String modell;
     private final int baujahr;
+
+    private int sitzplaetze;
     private int kilometerstand;
-    public Fahrzeug(String marke, String modell) {
+
+    final static int HOECHSTGESCHWINDIGKEIT_INNERORTS = 50;
+    public Fahrzeug(String marke, String modell, int sitzplaetze) {
         this.marke = marke;
         this.modell = modell;
+        this.sitzplaetze = sitzplaetze;
         this.baujahr = java.time.Year.now().getValue();
         this.kilometerstand = 0;
         anzahlFahrzeuge++;
