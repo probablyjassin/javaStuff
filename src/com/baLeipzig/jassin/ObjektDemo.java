@@ -37,7 +37,7 @@ public class ObjektDemo {
         System.out.println(Arrays.toString(intTestArray));
         System.out.println(Arrays.toString(fahrzeugArray));
 
-        int[] numbers = new int[10];
+        /* int[] numbers = new int[10];
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = [10];
             for (int i = 0; i < 10; i++) {
@@ -45,6 +45,6 @@ public class ObjektDemo {
                     numbers[i] = i;
                 }
             }
-        }
+        }*/
     }
 }
