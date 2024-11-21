@@ -5,6 +5,10 @@ import com.baLeipzig.jassin.Fahrzeug;
 import java.util.Arrays;
 
 public class ObjektDemo {
+
+    
+
+
     public static void main(String[] args) {
         Fahrzeug fahrzeug = new Fahrzeug("BMW", "X5", 5);
         Fahrzeug fahrzeug2 = new Fahrzeug("BMW", "X5", 5);
@@ -36,6 +40,20 @@ public class ObjektDemo {
 
         System.out.println(Arrays.toString(intTestArray));
         System.out.println(Arrays.toString(fahrzeugArray));
+
+        String[] stringArray = {"Integer", "Boolean", "Character", "Long", "Double", "Float", "Short", "Byte"};
+
+        Arrays.sort(stringArray);
+        for (String s : stringArray) {
+            System.out.println(s);
+        }
+
+        char acht = '8';
+        char x = 'x';
+        System.out.println(java.lang.Character.isDigit(acht));
+        System.out.println(java.lang.Character.isDigit(x));
+
+
 
         /* int[] numbers = new int[10];
         for (int i = 0; i < numbers.length; i++) {

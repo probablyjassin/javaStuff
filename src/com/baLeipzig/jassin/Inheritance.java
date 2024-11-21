@@ -11,17 +11,29 @@ public class Inheritance {
 
         public abstract void honk();
 
-        public void drive(int distance) {
-            kilometers_driven += Math.abs(distance);
-            System.out.println("brumm brumm");
-        }
-
+        private final Lamp mainLight;
 
         public Vehicle(String marke, String modell, int sitzplaetze) {
             this.brand = marke;
             this.model = modell;
             this.seats = sitzplaetze;
+            this.mainLight = new Lamp();
             System.out.println("Fahrzeug erstellt");
+        }
+
+        public boolean mainLightStatus() {
+            return mainLight.isOn();
+        }
+        public void mainLightOn() {
+            mainLight.anschalten();
+        }
+        public void mainLightOff() {
+            mainLight.ausschalten();
+        }
+
+        public void drive(int distance) {
+            kilometers_driven += Math.abs(distance);
+            System.out.println("brumm brumm");
         }
 
     }
@@ -61,6 +73,19 @@ public class Inheritance {
         }
     }
 
+    public static class Lamp {
+        private boolean isOn = false;
+        public void anschalten() {
+            isOn = true;
+        }
+        public void ausschalten() {
+            isOn = false;
+        }
+        public boolean isOn() {
+            return isOn;
+        }
+    }
+
     public static void main(String[] args) {
         //Vehicle meinAuto = new Vehicle("VW", "Golf", 5);
         // Simple Car
@@ -77,6 +102,9 @@ public class Inheritance {
         // Truck
         LKW meinLKW = new LKW("VW", "Transporter", 3, 2, 2000);
         meinLKW.drive(100);
+        meinLKW.mainLightOn();
+        System.out.println(meinLKW.mainLightStatus());
+        meinLKW.honk();
         System.out.println(meinLKW.kilometers_driven);
     }
 }
