@@ -2,6 +2,14 @@ package com.baLeipzig.jassin;
 
 public class Inheritance {
 
+    // write docstring
+
+    /**
+     * This is the blueprint for a basic vehicle
+     * @param brand the brand of the vehicle
+     * @param model the model of the vehicle
+     * @param seats the number of seats in the vehicle
+     */
     public static abstract class Vehicle {
         String brand;
         String model;
@@ -13,10 +21,10 @@ public class Inheritance {
 
         private final Lamp mainLight;
 
-        public Vehicle(String marke, String modell, int sitzplaetze) {
-            this.brand = marke;
-            this.model = modell;
-            this.seats = sitzplaetze;
+        public Vehicle(String brand, String model, int seats) {
+            this.brand = brand;
+            this.model = model;
+            this.seats = seats;
             this.mainLight = new Lamp();
             System.out.println("Fahrzeug erstellt");
         }
